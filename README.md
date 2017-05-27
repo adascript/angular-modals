@@ -1,3 +1,3 @@
-##Basic Modals in Angular
+# Basic Modals in Angular
 
 more to come.
