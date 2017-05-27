@@ -3,6 +3,9 @@
         this.cancel = function() {
             $uibModalInstance.dismiss('dismiss')
         }
+        this.ok = function() {
+            $uibModalInstance.close(this.quote)
+        }
     }
 
     angular

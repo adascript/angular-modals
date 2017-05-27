@@ -1,11 +1,16 @@
 <div>
     <div class="modal-header">
-        <h2 class="modal-title">Modal Title</h2>
+        <h2 class="modal-title">Add a Quote</h2>
     </div>
     <div class="modal-body">
-        <p>This is a modal body.</p>
+        <p>Add a new crazy quote!</p>
+        <form name="add-quote" ng-submit="modalInstance.ok()">
+            <input class="form-control" ng-model="modalInstance.quote" title="quote" placeholder="get zany!" autofocus />
+            <h3>{{modalInstance.quote}}
+        </form>
     </div>
     <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="modalInstance.ok()">Add Quote!</button>
         <button class="btn btn-warning" type="button" ng-click="modalInstance.cancel()">Close</button>
     </div>
 </div>

@@ -1,7 +1,13 @@
-<section>
-    <h1>{{home.greeting}}
-    <div ng-controller='ModalCtrl as modals'>
-        <button type="button" class="btn btn-default" ng-click="modals.open()">New room</button>
+<section class="container">
+    <h1>{{home.greeting}}</h1>
+    <hr />
+    <div>
+        <h3>These are actual quotes from a conversation with my grandfather.</h3>
+        <ul ng-repeat="quote in home.quotes">
+            <li>{{quote}}</li>
+        </ul>
     </div>
-    </h1>
+    <div ng-controller='ModalCtrl as modals'>
+        <button type="button" class="btn btn-info" ng-click="modals.open()">Add Your Own!</button>
+    </div>
 </section>

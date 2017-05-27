@@ -1,8 +1,9 @@
 (function() {
-    function HomeCtrl() {
-        this.greeting = 'let\'s make some modals!'
+    function HomeCtrl(Quote) {
+        this.greeting = 'Let\'s have fun with modals!'
+        this.quotes = Quote.all
     }
     angular
         .module('angularModals')
-        .controller('HomeCtrl', [HomeCtrl])
+        .controller('HomeCtrl', ['Quote', HomeCtrl])
 })()

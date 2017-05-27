@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <title>Let's Make Modals!</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="#">Angular + Modals</a></div>
+            <div id="navbar" class="collapse navbar-collapse"></div>
+        </div>
+    </nav>
     <ui-view></ui-view>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -14,6 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/Quote.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
