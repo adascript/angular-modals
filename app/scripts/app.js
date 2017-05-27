@@ -1,4 +1,7 @@
 (function() {
+    /*
+        nothing special or modal-specific in this file. 
+    */
     function config($stateProvider, $locationProvider) {
         $locationProvider
             .html5Mode({
